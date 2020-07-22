@@ -2,10 +2,20 @@
 ---
 
 
+
 ```
-vi Gemfile
-gem 'sqlite3', group: [:deployment, :test]
-gem 'pg', group: :production
+git clone git@gitub.com:takagotch/apptky4.1.2.git
+cd apptky4.git
+heroku create apptky4.1.2
+
+
+
+
+
+
+
+
+
 
 ```
 
@@ -15,6 +25,11 @@ gem 'pg', group: :production
 heroku create apptky4
 git init
 git add .
+//
+vi Gemfile
+gem 'sqlite3', group: [:deployment, :test]
+gem 'pg', group: :production
+//
 git comit -m "1st"
 // New Repository - github
 //: apptky4
