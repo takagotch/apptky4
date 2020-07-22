@@ -64,6 +64,7 @@ GEM
     crass (1.0.6)
     erubi (1.9.0)
     execjs (2.7.0)
+    ffi (1.13.1)
     ffi (1.13.1-x86-mingw32)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
@@ -72,7 +73,7 @@ GEM
     jbuilder (2.7.0)
       activesupport (>= 4.2.0)
       multi_json (>= 1.2)
-    loofah (2.1.1)
+    loofah (2.6.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -83,6 +84,8 @@ GEM
     minitest (5.14.1)
     multi_json (1.12.2)
     nio4r (2.5.2)
+    nokogiri (1.10.10)
+      mini_portile2 (~> 2.4.0)
     nokogiri (1.10.10-x86-mingw32)
       mini_portile2 (~> 2.4.0)
     public_suffix (4.0.5)
@@ -139,6 +142,7 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
+    sqlite3 (1.3.13)
     sqlite3 (1.3.13-x86-mingw32)
     thor (1.0.1)
     thread_safe (0.3.6)
@@ -164,6 +168,7 @@ GEM
       nokogiri (~> 1.3)
 
 PLATFORMS
+  ruby
   x86-mingw32
 
 DEPENDENCIES
