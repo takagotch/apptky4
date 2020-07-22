@@ -1,24 +1,24 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```
 
-Things you may want to cover:
+```
 
-* Ruby version
 
-* System dependencies
+```
+// git&heroku 
+heroku create apptky4
+git init
+git add .
+git comit -m "1st"
+// New Repository - github
+//: apptky4
+// Create
+git remote add origin git@github.com:takagotch/apptky4.2.git
+git push -u origin master
+git push heroku master
 
-* Configuration
+```
 
-* Database creation
+https://git.heroku.com/apptky4.git
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
