@@ -19,6 +19,5 @@ git push heroku master
 
 ```
 
-https://git.heroku.com/apptky4.git
-
+https://apptky4.herokuapp.com/
 
