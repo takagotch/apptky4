@@ -25,8 +25,10 @@ git push -u origin master
 git push heroku master
 
 ```
-
 https://apptky4.herokuapp.com/
+
+---
+###### 
 
 
 ```
