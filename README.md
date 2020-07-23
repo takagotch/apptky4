@@ -73,6 +73,7 @@ git comit -m "1st"
 git remote add origin git@github.com:takagotch/apptky4.2.git // git remote
 git push -u origin master
 git push heroku master
+heroku run rails db:migrate
 
 ```
 https://apptky4.herokuapp.com/
@@ -82,6 +83,10 @@ https://apptky4.herokuapp.com/
 
 
 ```
+rails g scaffold List name:string age:integer
+rails g db:create
+rails db:migrate
+rails s -b 192.168.33.10 -p 3000
 ```
 
 ```
