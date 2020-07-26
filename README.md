@@ -90,13 +90,56 @@ rails s -b 192.168.33.10 -p 3000
 ```
 
 ```sh
-rails new blog --skip-bundle
+rails new blog --skip-bundle           // --database postgresql
+cd blog
+rails s
+curl http://localhost:3000/
 
+rake db:create
+rails g scaffold Article title:string
+rake db:migrate
+http://localhost:3000/articles
 
+rails g controller home index
+vi app/controllers/home_controller.rb
+vi app/views/home/index.html.erb
+vi config/routes.rb
+vi app/views/home/index.html.erb
+curl http://localhost:3000/
 
+rails g model Comment article:references
+rake db:migrate
+vi app/models/article.rb
+vi app/models/comment.rb
 
+rails console
+article = Article.first
+article.comments.creeate(:from => 'rubyist',
+                         :body => 'comment1')
+article.comments.create(:from => 'rubyist',
+                        :body => 'comment2' )
+article.comments.count
 
+vi app/views/home/index.html.erb
+curl http://localhost:3000/page/ARTICLEID
+vi app/controllers/ome_controller.rb
+vi app/views/home/page.html.erb
+vi config/routes.rb
+curl http://localhost:3000/page/ARTICLEID
+vi app/views/home/index.html.erb
 
+vi app/views/home/page.html.erb
+vi app/views/home/page.html.erb
+rails g controller comments
+vi app/controllers/comments_controller.rb
+vi config/routes.rb
+
+vi app/views/home/page.html.erb
+vi app/views/comments/_list.html.erb
+vi app/views/comments/_form.html.erb
+vi app/models/comment.rb
+vi app/controller/comments_controller.rb
+vi app/views/comments/_form.html.erb
 ```
 
 
