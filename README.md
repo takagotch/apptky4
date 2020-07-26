@@ -89,7 +89,14 @@ rails db:migrate
 rails s -b 192.168.33.10 -p 3000
 ```
 
-```
+```sh
+rails new blog --skip-bundle
+
+
+
+
+
+
 ```
 
 
